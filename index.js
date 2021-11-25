@@ -431,6 +431,8 @@ Player.prototype.update = function (time, state, keys) {
 function trackKeys(keys) {
     let down = Object.create(null);
     function track(event) {
+        console.log(event.type)
+
         if (keys.includes(event.key)) {
             down[event.key] = event.type == "keydown";
             event.preventDefault();

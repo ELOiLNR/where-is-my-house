@@ -21,17 +21,23 @@ body
         margin: auto;
     }
     .controls {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
     }
     .controls button {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
         cursor: pointer;
         user-select: none;
+    }
+    #ArrowLeft {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    #ArrowUp {
+        margin-right: 30px;
     }
 }
 
