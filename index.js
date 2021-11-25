@@ -435,9 +435,18 @@ function trackKeys(keys) {
             down[event.key] = event.type == "keydown";
             event.preventDefault();
         }
+
+        if (keys.includes(event.target.id)) {
+            down[event.target.id] = event.type == "mousedown" || event.type == "touchstart";
+            event.preventDefault();
+        }
     }
     window.addEventListener("keydown", track);
     window.addEventListener("keyup", track);
+    window.addEventListener("mousedown", track);
+    window.addEventListener("mouseup", track);
+    window.addEventListener("touchstart", track);
+    window.addEventListener("touchend", track);
     return down;
 }
 
