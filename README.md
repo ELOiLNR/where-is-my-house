@@ -1,2 +1,2 @@
 ### Play the game online :
-https://colinfaivre.github.io/plateformAdventure/index.html
+ https://eloilnr.github.io/where-is-my-house/index.html
