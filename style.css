@@ -1,6 +1,11 @@
+body
+{
+    display: flex;
+    background-color: rgba(247, 102, 6, 0.836);
+}
 /* BACKGROUND */
 .background {
-    background: rgb(52, 166, 251);
+    background: rgb(160, 24, 24);
     table-layout: fixed;
     border-spacing: 0;
 }
@@ -40,3 +45,4 @@
     max-height: 450px;
     position: relative;
 }
+

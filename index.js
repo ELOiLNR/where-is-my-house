@@ -248,11 +248,11 @@ CanvasDisplay.prototype.updateViewport = function(state) {
 
 CanvasDisplay.prototype.clearDisplay = function(status) {
     if (status == "won") {
-        this.cx.fillStyle = "rgb(68, 191, 255)";
+        this.cx.fillStyle = "rgb(170, 35, 35)";
     } else if (status == "lost") {
-        this.cx.fillStyle = "rgb(44, 136, 214)";
+        this.cx.fillStyle = "rgb(166, 30, 30)";
     } else {
-        this.cx.fillStyle = "rgb(52, 166, 251)";
+        this.cx.fillStyle = "rgb(160, 24, 24)";
     }
     this.cx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 };
@@ -485,5 +485,5 @@ async function runGame(plans, Display) {
             Display);
         if (status == "won") level++;
     }
-    console.log("You've won!");
+    alert("You've won!");
 }
