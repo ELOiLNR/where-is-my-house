@@ -2,6 +2,7 @@ body
 {
     display: flex;
     background-color: rgba(247, 102, 6, 0.836);
+    user-select: none;
 }
 
 .controls {

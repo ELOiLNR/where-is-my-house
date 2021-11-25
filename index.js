@@ -437,7 +437,7 @@ function trackKeys(keys) {
         }
 
         if (keys.includes(event.target.id)) {
-            down[event.target.id] = event.type == "mousedown" || event.type == "touchstart";
+            down[event.target.id] = event.type == "mousedown";
             event.preventDefault();
         }
     }
@@ -445,8 +445,6 @@ function trackKeys(keys) {
     window.addEventListener("keyup", track);
     window.addEventListener("mousedown", track);
     window.addEventListener("mouseup", track);
-    window.addEventListener("touchstart", track);
-    window.addEventListener("touchend", track);
     return down;
 }
 
